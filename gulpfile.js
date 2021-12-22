@@ -55,7 +55,8 @@ const bundle_css = () => {
 const bundle_js = () => {
 	return src([
 		'node_modules/fullpage.js/dist/fullpage.js',
-		'node_modules/slick-carousel/slick/slick.js'
+		'node_modules/slick-carousel/slick/slick.js',
+		'node_modules/inputmask/dist/jquery.inputmask.js'
 	])
 		.pipe(concat('bundle.js'))
 		.pipe(uglify())
