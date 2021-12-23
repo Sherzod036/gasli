@@ -43,4 +43,30 @@ $(function () {
 	}
 
 	if ($(window).width() > 992) fullpageInit()
+
+	$('.sidebar__nav-button_page').on('click', (e) => {
+		e.preventDefault()
+		$('html, body').animate({ scrollTop: 0 }, 500)
+	})
+
+	// TABS
+
+	const tabLinks = $('.tab-link')
+	const tabContents = $('.tab-content')
+
+	tabLinks.eq(0).addClass('tab-link_active')
+	tabContents.eq(0).addClass('tab-content_active')
+
+	tabLinks.on('click', function (e) {
+		e.preventDefault()
+
+		const id = $(this).attr('data-id')
+
+		tabLinks.removeClass('tab-link_active')
+
+		tabContents.removeClass('tab-content_active')
+		$(this).addClass('tab-link_active')
+
+		$(`#${id}`).addClass('tab-content_active')
+	})
 })
