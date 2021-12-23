@@ -5,6 +5,12 @@ $(function () {
 
 		$(this).find('.faq-block__hr').addClass('faq-block__hr_disabled')
 		$(this).find('.faq-block__desc').addClass('faq-block__desc_active')
+
+		const bg = $(this).attr('data-bg')
+
+		const bgUrl = `./img/bg/${bg}_bg.jpg`
+
+		$('.changeable-bg').css('background-image', `url(${bgUrl})`)
 	})
 
 	$('.directions-blocks').slick({
