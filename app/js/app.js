@@ -50,7 +50,6 @@ $(function () {
 	})
 
 	// TABS
-
 	const tabLinks = $('.tab-link')
 	const tabContents = $('.tab-content')
 
@@ -68,5 +67,31 @@ $(function () {
 		$(this).addClass('tab-link_active')
 
 		$(`#${id}`).addClass('tab-content_active')
+	})
+
+	// VACANCY
+	const vacancy = $('.vacancy')
+	const vacancyBlocks = $('.vacancy-blocks')
+	const vacancyBlock = $('.vacancy-block')
+	const vacancyClose = $('.vacancy-block__close')
+
+	vacancy.on('click', function (e) {
+		e.preventDefault()
+
+		const id = $(this).attr('vacancy-id')
+
+		vacancyBlocks.removeClass('vacancy-blocks_active')
+		vacancyBlock.removeClass('vacancy-block_active')
+
+		vacancyBlocks.addClass('vacancy-blocks_active')
+
+		$(`#${id}`).addClass('vacancy-block_active')
+	})
+
+	vacancyClose.on('click', function (e) {
+		e.preventDefault()
+
+		vacancyBlocks.removeClass('vacancy-blocks_active')
+		vacancyBlock.removeClass('vacancy-block_active')
 	})
 })

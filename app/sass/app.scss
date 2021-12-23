@@ -115,6 +115,8 @@ img {
 	display: flex;
 	align-items: center;
 	margin-left: -59px;
+	position: relative;
+	z-index: 5;
 	&__logo {
 		margin-right: 41px;
 	}
@@ -608,6 +610,10 @@ img {
 	}
 }
 
+.inner_indent {
+	margin-bottom: 48px;
+}
+
 .feedback {
 	display: flex;
 	flex-wrap: wrap;
@@ -616,7 +622,7 @@ img {
 		position: relative;
 		display: flex;
 		align-items: center;
-		width: 216px;
+		width: 47%;
 		height: 62px;
 		border-bottom: 1px solid #cbcbcb;
 		margin-bottom: 24px;
