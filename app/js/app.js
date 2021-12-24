@@ -48,7 +48,7 @@ $(function () {
 		})
 	}
 
-	if ($(window).width() > 992) fullpageInit()
+	if ($(window).width() > 1200) fullpageInit()
 
 	$('.sidebar__nav-button_page').on('click', (e) => {
 		e.preventDefault()
@@ -99,5 +99,16 @@ $(function () {
 
 		vacancyBlocks.removeClass('vacancy-blocks_active')
 		vacancyBlock.removeClass('vacancy-block_active')
+	})
+
+	// MOB
+	const hamb = $('.hamburger')
+	const mobNav = $('.mob__nav')
+
+	mobNav.slideUp()
+
+	hamb.on('click', function () {
+		hamb.toggleClass('is-active')
+		mobNav.slideToggle()
 	})
 })

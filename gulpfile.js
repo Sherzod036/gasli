@@ -44,7 +44,8 @@ const html = () => {
 const bundle_css = () => {
 	return src([
 		'node_modules/fullpage.js/dist/fullpage.css',
-		'node_modules/slick-carousel/slick/slick.css'
+		'node_modules/slick-carousel/slick/slick.css',
+		'node_modules/hamburgers/dist/hamburgers.css'
 	])
 		.pipe(concat('bundle.css'))
 		.pipe(csso())

@@ -1,0 +1,62 @@
+@media (max-width: 1400px) {
+	.title {
+		font-size: 42px;
+		line-height: 42px;
+	}
+	.inner_indent {
+		margin-bottom: 24px;
+	}
+	.button {
+		font-size: 21px;
+		padding: 15px 25px;
+	}
+	.desc {
+		font-size: 24px;
+		line-height: 25px;
+	}
+	.faq-block__desc_active {
+		height: 175px;
+	}
+	.directions .slick-dots {
+		margin-top: 5px;
+	}
+	.faq-block__icon {
+		top: 19px;
+	}
+	.directions__title {
+		line-height: 36px;
+	}
+	.direction__title {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.direction__desc {
+		font-size: 21px;
+		line-height: 25px;
+	}
+	.faq-block__icon {
+		width: 25px;
+	}
+	.why__desc {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.partners__title {
+		margin-bottom: 30px;
+	}
+	.partner {
+		margin-bottom: 30px;
+	}
+	.feedback__input-wrap,
+	.feedback__textarea-wrap {
+		height: 35px;
+	}
+	.contacts__location,
+	.contacts__email {
+		font-size: 21px;
+	}
+	.contacts__phone {
+		font-size: 32px;
+		line-height: 35px;
+	}
+}

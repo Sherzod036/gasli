@@ -354,9 +354,6 @@ img {
 	&__title {
 		margin-bottom: 12px;
 	}
-	&__desc {
-		margin-bottom: 48px;
-	}
 }
 
 .faq-block {
@@ -412,9 +409,6 @@ img {
 	&__title {
 		margin-bottom: 24px;
 	}
-	&__desc {
-		margin-bottom: 72px;
-	}
 }
 
 .directions {
@@ -431,7 +425,6 @@ img {
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 42px;
-		margin-bottom: 36px;
 	}
 	&-blocks {
 		position: relative;
@@ -493,11 +486,7 @@ img {
 }
 
 .why {
-	&__title {
-		margin-bottom: 48px;
-	}
 	&__block {
-		margin-bottom: 48px;
 		display: flex;
 
 		&:last-child {
@@ -515,9 +504,6 @@ img {
 }
 
 .tenders {
-	&__title {
-		margin-bottom: 48px;
-	}
 	&__view-all {
 		display: inline-flex;
 		align-items: center;
@@ -536,7 +522,6 @@ img {
 }
 
 .tender {
-	margin-bottom: 48px;
 	&:hover {
 		& .tender__title {
 			color: $primary-color;
@@ -578,9 +563,6 @@ img {
 }
 
 .contacts {
-	&__title {
-		margin-bottom: 48px;
-	}
 	&__phone {
 		display: block;
 		font-size: 36px;
@@ -606,12 +588,80 @@ img {
 		font-size: 24px;
 		line-height: 27px;
 		display: block;
-		margin-bottom: 48px;
 		transition: 0.3s;
 		&:hover {
 			color: $primary-color;
 		}
 	}
+}
+
+.mob {
+	width: 100%;
+	position: fixed;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+	padding: 12px 0;
+	border-bottom: 1px solid #e3e3e3;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__nav {
+		position: absolute;
+		top: 76px;
+		background-color: #fff;
+		box-shadow: 0px 12px 24px #00000029;
+		width: 100%;
+		& .list {
+			padding: 48px 0;
+			border-bottom: 1px solid #e3e3e3;
+			&__item {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 24px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			&__link {
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+.hamburger {
+	padding: 0;
+}
+
+.hamburger-box {
+	width: 35px;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+	width: 36px;
+	height: 2px;
+	background-color: #343434;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+	background-color: #343434;
+}
+.hamburger:hover,
+.hamburger:hover:after,
+.hamburger:hover:before {
+	opacity: 1;
+}
+.hamburger.is-active:hover,
+.hamburger.is-active:hover:after,
+.hamburger.is-active:hover:before {
+	opacity: 1;
 }
 
 .inner_indent {
@@ -702,6 +752,7 @@ img {
 
 @import 'pages/about';
 
+@import 'adaptive/xxl';
 @import 'adaptive/xl';
 @import 'adaptive/lg';
 @import 'adaptive/md';
